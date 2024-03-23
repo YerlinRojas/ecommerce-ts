@@ -10,13 +10,13 @@ type State = {
 }
 
 type Action = 
-{
+|{
   type: 'FETCH_REQUEST'
-}
+}|
 {
   type:'FETCH_REQUEST'
   payload: Product[]
-}
+}|
 {
   type: 'FETCH_FAIL'; payload: string
 }

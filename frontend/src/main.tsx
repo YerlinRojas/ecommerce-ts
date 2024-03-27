@@ -5,9 +5,8 @@ import ReactDOM from 'react-dom/client';
 import {
   createBrowserRouter,
   createRoutesFromElements,
-  BrowserRouter as
   Route,
-  RouterProvider
+  RouterProvider,
 } from 'react-router-dom';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -19,7 +18,7 @@ import axios from 'axios';
 
 axios.defaults.baseURL =
   process.env.NODE_ENV === 'development'
-    ? 'http://localhost:4000'
+    ? 'http://localhost:5173/'
     : '/';
 
     
